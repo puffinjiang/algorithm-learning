@@ -27,7 +27,7 @@ class Solution:
             fast_node = fast_node.next.next
             slow_node = slow_node.next
 
-        slow = self.reserve(slow_node)  # 后半部分反转链表
+        slow = self.reverse(slow_node)  # 后半部分反转链表
         while slow:
             if slow.val != head.val:
                 return False
@@ -36,7 +36,7 @@ class Solution:
 
         return True
 
-    def reserve(self, head: ListNode):
+    def reverse(self, head: ListNode):
         """
             链表反转
         :param head:
