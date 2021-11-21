@@ -6,10 +6,12 @@ class Node:
         self.children = children
 """
 
+
 class Node:
     def __init__(self, val=None, children=None):
         self.val = val
         self.children = children
+
 
 class Solution:
     def maxDepth(self, root: 'Node') -> int:
@@ -17,5 +19,5 @@ class Solution:
             return 0
         depth = 1
         for node in root.children:
-            depth = max(self.maxDepth(node) +1 ,1)
+            depth = max(self.maxDepth(node) + 1, 1)
         return depth
