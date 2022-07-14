@@ -28,3 +28,4 @@ def bubble_sort(arr: list):
 
 if __name__ == '__main__':
     a = [5, 4, 3, 2, 78, 85]
+    assert [2, 3, 4, 5, 78, 85] == bubble_sort(a)
