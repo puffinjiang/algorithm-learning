@@ -10,7 +10,7 @@
 
 import random
 
-from tests.sort.quick_sort import quick_sort
+from sort.quick_sort import quick_sort
 
 
 def test_quick_sort():
